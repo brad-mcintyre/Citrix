@@ -1,5 +1,5 @@
 ---
 - name: "Install XenApp 6.5"
-  hosts: apps-citrix-secondary-xa
+  hosts: ctx65-2
   roles:
   - role: ../install-xenapp65
