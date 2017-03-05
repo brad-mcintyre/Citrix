@@ -1,7 +1,5 @@
 ---
 - name: "Install XenApp 6.5"
   hosts: apps-citrix-secondary-xa
-  tasks:
-    - ping
   roles:
   - role: ../install-xenapp65
