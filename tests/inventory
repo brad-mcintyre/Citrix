@@ -4,13 +4,13 @@ AD ansible_host=192.168.80.131
 
 
 [apps_ad_primary_dc]
-AD
+AD.env1.lab.com
 
 [apps_citrix_primary_xa]
-CTX65-1
+CTX65-1.env1.lab.com
 
 [apps_citrix_secondary_xa]
-CTX65-2
+CTX65-2.env1.lab.com
 
 [apps_ad]
 apps_ad_primary_dc
