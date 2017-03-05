@@ -1,7 +1,10 @@
 ---
 - name: Install the required Windows roles amd features
+  win_file:
+    path: C:\install\test.conf
+    state: file
+
   win_feature:
-    ping
     name: "GPMC,AS-NET-Framework,NET-Framework,RDS-RD-Server,Desktop-Experience"
     state: present
     include_management_tools: yes
