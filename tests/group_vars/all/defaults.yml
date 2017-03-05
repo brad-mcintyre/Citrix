@@ -1,0 +1,13 @@
+#adminuser: administrator
+#adminpassword: vagrant
+ansible_user: administrator
+ansible_password: Password01                       # Ansile password used to access a box during the build phase.
+ansible_connection: winrm                      # Default connection type
+ansible_port: 5986                            # Default ansible port
+
+keytabsfolder: /tmp/keytabs                                               # Location containing keytab file for environment (no trailing slash)
+ansible_winrm_transport: plaintext                                        # Default winrm transport type
+ansible_winrm_server_cert_validation: ignore                              # Use when self-signed certificates
+ansible_winrm_kerberos_delegation: true                                   # Allow kerberos double hopping
+ansible_winrm_operation_timeout_sec: 6000
+ansible_winrm_read_timeout_sec: 21600
