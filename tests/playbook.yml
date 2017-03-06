@@ -6,6 +6,6 @@
       local_action: command kinit administrator@{{ domain }} -k -t {{ keytabsfolder }}/administrator-{{ domain }}.keytab
 
 - name: "Install XenApp 6.5"
-  hosts: citrixad
+  hosts: domcontrolad
   roles:
   - role: ../install-xenapp65
