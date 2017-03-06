@@ -1,5 +1,5 @@
 ---
 - name: "Install XenApp 6.5"
-  hosts: citrixwg
+  hosts: citrixad
   roles:
   - role: ../install-xenapp65
