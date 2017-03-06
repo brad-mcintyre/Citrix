@@ -1,5 +1,5 @@
 ---
 - name: "Install XenApp 6.5"
-  hosts: ctx65-2.env1.lab.com
+  hosts: earghaerh
   roles:
   - role: ../install-xenapp65
