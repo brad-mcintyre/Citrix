@@ -1,4 +1,10 @@
 ---
+- name: "Get Kerberos Ticket"
+  hosts: localhost
+  tasks:
+    - name: "Get Kerberos Ticket Task"
+      local_action: command kinit administrator@{{ domain }} -k -t {{ keytabsfolder }}/administrator-{{ domain }}.keytab
+
 - name: Install the required Windows roles amd features
   win_file:
     path: C:\install\test.conf
