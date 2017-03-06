@@ -1,0 +1,31 @@
+#########################################
+# Environment Configuration
+# Adjust to suit the target environment.
+#########################################
+domain: ENV1.LAB.COM                                                       # Set the FQDN of the domain
+domainnetbios: ENV1                                                       # NetBIOS name of the domain
+ansible_user: administrator@ENV1.LAB.COM                                   # Local administrator account in the domain
+ansible_password: Password01                                              # Ansile password used to access a box during the build phase.
+mediasource: 172.17.132.143                                               # IP address of the local Genesis box
+mediauser: bradm                                                          # User ID allowed to access samba share on Genesis box
+# mediapassword:                                                  # Passowrd for the media user
+#vmwaredatastore: VNX0933_LUN001_R5                                        # VMware datastorename
+#vmwarevswitch: vxw-dvs-468-virtualwire-300-sid-5098-Pod_O_Core_LS         # Default vSwitch for a new VM
+ipv4subnet: 192.168.80.                                                   # Must end with trailing "."
+adminuser: administrator                                                  # Local administrator account used for scheduled task
+adminpassword: Password01                                                 # Local administrator password used for scheduled tasks
+networkadaptername: Ethernet                                              # Default name of network adapter, required for setting Gateway and DNS Address
+workloadsubnet: 172.18.189.
+serverprefix: lab
+location: env1
+
+# Used by Vagrant - adjust as required.
+baseip: 100                                                               # First IP in the subnet - result is ipv4subnet.baseip
+CXAStartIP: 20                                                            # IP used to build CXA build VM
+CXDStartIP: 21                                                            # IP used to build CXD build VM
+vmwaretemplate: Templates/Win2012R2VAGRANT                                # Name of the VMware template to use
+vmwarecustomisationspec: PODOCORE                                  # Name of hte VMware customisation spec
+vcenterip: 192.168.1.20                                                   # IP of the vCenter platform
+vcenterclustername: SEPTAR Compute                                        # VMware cluster to use
+vcenteruser: administrator                                                # Account w/ permissions to create VMs in vcenter
+vcenterpassword: Password01                                               # Password for vCenter account
