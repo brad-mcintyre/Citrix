@@ -8,12 +8,12 @@ AD ip=192.168.80.10
 AD.ENV1.LAB.COM ip=192.168.80.10
 
 [citrixwg]
-CTX65-1 ip=192.168.80.30
-CTX65-2 ip=192.168.80.31
+CTX713-1 ip=192.168.80.32
+
 
 [citrixad]
-CTX65-1.ENV1.LAB.COM ip=192.168.80.30
-CTX65-2.ENV1.LAB.COM ip=192.168.80.31
+CTX713-1.ENV1.LAB.COM ip=192.168.80.32
+
 
 ###################
 # Group Var Section
