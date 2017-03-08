@@ -5,7 +5,7 @@
     - name: "Get Kerberos Ticket Task"
       local_action: command kinit administrator@{{ domain }} -k -t {{ keytabsfolder }}/administrator-{{ domain }}.keytab
 
-- name: "Install XenApp 6.5"
+- name: "Install XenApp 7.13"
   hosts: citrixad
   roles:
-  - role: ../install-xenapp731
+  - role: ../install-xenapp713
